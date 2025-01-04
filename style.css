@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,300;1,100;1,300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Prompt", serif;
+
+}
+
+/* Avec * { margin: 0; padding: 0; }, on supprime les styles pat défaut que le navigateur applique pour partir d’une base neutre */
+
+body {
+    background-color: #f5efe6;
+    position: relative;
+    height: 100vh; /*signifie que la hauteur est dynamique et s'ajuste à 100% de la hauteur de la fenêtre*/
+    overflow: hidden;
+    /* pour masquer le contenu qui dépasse de la boîte de l'élément */
+}
+
+.logo{
+    color: #366618;
+    font-size: 40px; /* Taille du font utilisé */
+}
+
+header{
+
+    display : flex; 
+    /* Va permettre d'aligner à l'horizontale et côte à côte les différents BLOCKS/classe compris dans la balise <header> */
+    align-items: center;
+    /* Va permettre de centrer les éléments du header sur l'axe horizontal qui traverse le centre du <header> */
+    justify-content: space-between;
+    /* Va séparer de manière équidistant les éléments/BLOCKS/classes du header */
+    /* ATTENTION : il faut que la largeur du conteneur soit suffisante et il nécessite un display : flex pour que la fonction s'applique  */
+    height: 80px; /* prend 80px de la fenêtre */
+    padding : 0 8%
+    /* crée un espace intérieur de 0 pixels en haut et en bas et de 8% de la largeur du parent à gauche et à droite */
+}
+
+.menu
+{
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu li {
+    list-style: none; /*enlève les puces de la liste  */
+    margin : 0 15px; 
+    /*pas d'espacement en haut et en bas, ajoute un espacement de 15px à droite et à gauche*/
+}  
+
+.test{
+    font-family: "Prompt", serif;
+    font-weight: 100;
+    font-style: italic;
+}
+.box {
+    padding: 0 8%;
+    background-color: lightblue;
+}
+
+
+
+
+
+
+/* Différence entre margin et padding :
+
+margin :
+
+    - C'est l'espace extérieur à l'élément.
+    - Sépare l’élément de ses voisins.
+    - Ajoute n px d'espace autour du cadre (sépare du voisin).
+
+padding :
+    - C'est l'espace intérieur entre le contenu de l’élément (comme du texte ou une image) et ses bords.
+    - Ajoute n px d'espace entre le texte et le bord du cadre.
+ */
