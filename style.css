@@ -9,16 +9,20 @@
 /* Avec * { margin: 0; padding: 0; }, on supprime les styles pat défaut que le navigateur applique pour partir d’une base neutre */
 
 body {
-    background-color: #f5efe6;
+    background-color: #18534F;
     position: relative;
     height: 100vh; /*signifie que la hauteur est dynamique et s'ajuste à 100% de la hauteur de la fenêtre*/
     overflow: hidden;
     /* pour masquer le contenu qui dépasse de la boîte de l'élément */
 }
 
+
+/* MENU : HEADER */
+
 .logo{
-    color: #366618;
-    font-size: 40px; /* Taille du font utilisé */
+    color: #FEEAA1;
+    font-size: 50px; /* Taille du font utilisé */
+
 }
 
 header{
@@ -41,15 +45,99 @@ header{
     display: flex;
     align-items: center;
     justify-content: space-between;
+
 }
 
 .menu li {
     list-style: none; /*enlève les puces de la liste  */
     margin : 0 15px; 
     /*pas d'espacement en haut et en bas, ajoute un espacement de 15px à droite et à gauche*/
+
 }  
 
-.test{
+.menu li a { 
+/*contrairement à .menu li {} où on modifie un élément de liste, on touche direcement aux liens ici et au texte*/
+    color: #ECF8F6;
+    text-decoration: 0; /*Supprime le surlignage*/
+
+    text-transform: uppercase; /*Met les textes du block en majuscules*/
+    font-size: 18px;
+    transition: 0.5s; /*Fait passer la police par défautdu text à une taille de 18 px avec une transition de 1s*/
+}
+
+.menu li a:hover{
+    color: #FEEAA1;
+}
+
+.contact {
+    border: 1px solid #FEEAA1; /*épaisseur de la bordure de 1px et de forme rectangulaire noire*/
+    padding: 5px 8px;
+}
+
+.menu .contact a{ 
+    /*.contact a {} ne modifiera pas la couleur de "contact" et gardera la couleur définit dans les éléments de .menu li a{}, ici on spécifie quel élément de la liste 
+    on veut modifier précisément*/
+    color: #ECF8F6; 
+
+}
+
+.menu .contact a:hover{ 
+    border: 1px solid white;
+    padding: 0 8px; 
+    /*intéressant de noter que si le rectangle généré après passage de la souris est plus grand que le rectangle de base ça va élargir ce rectangle de base*/
+    color: #FEEAA1
+}
+
+/* DESCRIPTION */
+
+.introduction{
+    height: calc(100vh - 200px);
+    padding: 0 8%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.left{
+    width: 45%;
+}
+
+.left h1{
+    font-size: 45px;
+    color: #D6955B;
+}
+
+.left p {
+    color: #ECF8F6;
+    margin-top: 20px;
+    font-size: 14px;
+
+}  
+
+.left a {
+    color: #FEEAA1;
+    text-decoration: 0;
+    font-size: 14px;
+}
+
+.left a:hover{
+    color: #ECF8F6;
+    border: 1px solid #FEEAA1;
+    letter-spacing: 1px;
+}
+
+.right{
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+.right img{
+    height: 400px;
+
+}
+/* .test{
     font-family: "Prompt", serif;
     font-weight: 100;
     font-style: italic;
@@ -57,11 +145,7 @@ header{
 .box {
     padding: 0 8%;
     background-color: lightblue;
-}
-
-
-
-
+} */
 
 
 /* Différence entre margin et padding :

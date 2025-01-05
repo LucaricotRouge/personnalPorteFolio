@@ -19,22 +19,42 @@
 <body>
     <!-- Contenu visible de la page -->
     <header>
+
         <div class="logo">
-            <span style ="color : #382c2c">!</span>L.J
+            <span style ="color : #C9E3CC">!</span>L
         </div>
-        <ul class="menu"> 
-        <!-- Permet de créer des liste avec des puces, utiliser <ol></o  l> pour une liste avec des numéros -->
-           <li><a href="index.html">About me</a></li> <!-- éléments de la liste -->
-           <!-- Chaque lien <a href="..."> pointe vers un fichier HTML différent -->
-           <li><a href="Projects.html">Projects</a></li>
-           <li><a href="Contact.html">Contact</a></li>
-        </ul>
-        <p class="test">blablabla</p>
+        <nav> <!-- Bon réflexe à avoir pour une meilleure structure sémantique et accessibilité -->
+            <ul class="menu"> 
+                <!-- Permet de créer des liste avec des puces, utiliser <ol></o  l> pour une liste avec des numéros -->
+                   <li><a href="index.html">About me</a></li> <!-- éléments de la liste -->
+                   <!-- Chaque lien <a href="..."> pointe vers un fichier HTML différent -->
+                   <li><a href="Projects.html">Projects</a></li>
+                   <li class="contact"><a href="Contact.html">Contact Me</a></li>
+                </ul>
+        </nav>
+        <!-- <p class="test">blablabla</p>
         <div class="box">
             Contenu de la boîte
-        </div>
+        </div> -->
         
     </header>
+
+    <!-- Section dédiée à mon introduction et ma présentation  -->
+    <section class="introduction">
+        <div class="left">
+            <h1>
+                <span>WHO</span>
+                <span>AM</span>
+                <span>I</span>
+                <span>?</span>
+            </h1>
+            <p>I'm an M1 student in a double engineering/management program at the Léonard-de-Vinci La Défense university campus. I'm currently in the creative 
+                technologies stream, working on low-tech and bio-materials <a href="Projects.html">projects.</a> </p>
+        </div>
+        <div class="right">
+            <img src="kirby.png">
+        </div>
+    </section>
 
 </body>
 </html>
