@@ -11,8 +11,8 @@
 body {
     background-color: #18534F;
     position: relative;
+    /* permet de définir un contexte de positionnement pour un élément, tout en le laissant à sa position normale dans le flux du document, sauf si vous spécifiez des valeurs supplémentaires comme top, right, bottom, ou left. */
     height: 100vh; /*signifie que la hauteur est dynamique et s'ajuste à 100% de la hauteur de la fenêtre*/
-    overflow: hidden;
     /* pour masquer le contenu qui dépasse de la boîte de l'élément */
 }
 
@@ -41,7 +41,6 @@ header{
 
 .menu
 {
-
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -87,6 +86,8 @@ header{
     /*intéressant de noter que si le rectangle généré après passage de la souris est plus grand que le rectangle de base ça va élargir ce rectangle de base*/
     color: #FEEAA1
 }
+
+ /*<-----About Me----->*/
 
 /* DESCRIPTION */
 
@@ -160,3 +161,118 @@ padding :
     - C'est l'espace intérieur entre le contenu de l’élément (comme du texte ou une image) et ses bords.
     - Ajoute n px d'espace entre le texte et le bord du cadre.
  */
+
+
+ /*<-----Projects----->*/
+
+
+section h2{
+    border: 2px solid #18534F;
+    padding: 5px 8px;
+}
+
+section h2:hover{
+    color: #FEEAA1;
+    border: 2px solid #ECF8F6; /*épaisseur de la bordure de 1px et de forme rectangulaire noire*/
+    padding: 3px 16px;
+    transition: 0.5s;
+}
+
+.DBLT {
+    background-color: #226D68;
+    height: 25vh;
+    padding: 5% 5%;
+}
+
+.DBLT a{
+    text-decoration: 0;
+    font-size: 20px;
+    transition: 1s; 
+}
+
+.DBLT h2{
+    color: #D6955B
+    
+}
+
+.DBLT p{
+    color: #ECF8F6;
+    margin-top: 25px;
+    margin-left: 50px;
+}
+
+
+.CS {
+    
+    background-color: #18534F;
+    height: 25vh;
+    padding: 5% 5%;
+ }
+
+.CS a {
+    text-decoration: 0;
+    font-size: 20px;
+    transition: 1s; 
+}
+
+.CS h2{
+    color: #D6955B; 
+    border: 2px solid #226D68;
+    padding: 5px 8px;
+}
+
+.CS p{
+    color: #ECF8F6;
+    margin-top: 20px;
+    margin-left: 50px;
+}
+
+.Electronic {
+    
+    background-color: #226D68;
+    height: 25vh;
+    padding: 5% 5%;
+ }
+
+ .Electronic a {
+    text-decoration: 0;
+    font-size: 20px;
+    transition: 1s; 
+}
+
+.Electronic h2{
+    color: #D6955B; 
+    border: 2px solid #18534F;
+    padding: 5px 8px;
+}
+
+.Electronic p{
+    color: #ECF8F6;
+    margin-top: 20px;
+    margin-left: 50px;
+}
+
+.Modelisation {
+    
+    background-color: #18534F;
+    height: 25vh;
+    padding: 5% 5%;
+ }
+
+ .Modelisation a {
+    text-decoration: 0;
+    font-size: 20px;
+    transition: 1s; 
+}
+
+.Modelisation h2{
+    color: #D6955B; 
+    border: 2px solid #226D68;
+    padding: 5px 8px;
+}
+
+.Modelisation p{
+    color: #ECF8F6;
+    margin-top: 20px;
+    margin-left: 50px;
+}
