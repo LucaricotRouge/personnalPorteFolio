@@ -37,6 +37,7 @@ header{
     height: 80px; /* prend 80px de la fenêtre */
     padding : 0 8%
     /* crée un espace intérieur de 0 pixels en haut et en bas et de 8% de la largeur du parent à gauche et à droite */
+
 }
 
 .menu
@@ -44,7 +45,6 @@ header{
     display: flex;
     align-items: center;
     justify-content: space-between;
-
 }
 
 .menu li {
@@ -166,12 +166,12 @@ padding :
  /*<-----Projects----->*/
 
 
-section h2{
-    border: 2px solid #18534F;
+section.Projects h2{
+    /* border: 2px solid #18534F; */
     padding: 5px 8px;
 }
 
-section h2:hover{
+section.Projects h2:hover{
     color: #FEEAA1;
     border: 2px solid #ECF8F6; /*épaisseur de la bordure de 1px et de forme rectangulaire noire*/
     padding: 3px 16px;
@@ -192,7 +192,7 @@ section h2:hover{
 
 .DBLT h2{
     color: #D6955B
-    
+
 }
 
 .DBLT p{
@@ -217,7 +217,7 @@ section h2:hover{
 
 .CS h2{
     color: #D6955B; 
-    border: 2px solid #226D68;
+    /* border: 2px solid #226D68; */
     padding: 5px 8px;
 }
 
@@ -242,7 +242,7 @@ section h2:hover{
 
 .Electronic h2{
     color: #D6955B; 
-    border: 2px solid #18534F;
+    /* border: 2px solid #18534F; */
     padding: 5px 8px;
 }
 
@@ -267,7 +267,7 @@ section h2:hover{
 
 .Modelisation h2{
     color: #D6955B; 
-    border: 2px solid #226D68;
+    /* border: 2px solid #226D68; */
     padding: 5px 8px;
 }
 
@@ -275,4 +275,172 @@ section h2:hover{
     color: #ECF8F6;
     margin-top: 20px;
     margin-left: 50px;
+}
+
+ /*<-----ProjectsDBLT----->*/
+
+
+ .DBLTtitle{
+    color: #D6955B; 
+    padding: 5% 5%;
+    font-size: 80px;
+ }
+
+.DBLTProjects li {
+    display: flex;
+    justify-content: center;
+}
+
+.DBLTProjects li a{
+    text-decoration: 0;
+    display: block; /* Permet au lien de se comporter comme un bloc */
+    width: 100vw; /* Prend toute la largeur de l'écran */
+    height: 60vh; /* Ajuste la hauteur selon tes besoins */
+    text-align: center; /* Centre le texte horizontalement */    font-size: 40px;
+    color: #18534F;
+    /* Pour centrer et faire couvrir l'image */
+    background-size: cover; /* L'image couvre tout le bloc */
+    background-position: center; /* Centre l'image */
+    margin: 5% 0;
+
+}
+
+.DBLTProjects a:hover{
+    color: #FEEAA1; 
+
+}
+
+.BioSensors {
+    background-image: url('BioSensors.jpg'); /* Lien vers ton image */
+    animation: scroll-vertical 18s linear infinite; /* Animation pour le défilement */
+
+}
+
+
+.MyceliumPizzaOven{
+    background-image: url('MyceliumPizzaOven.jpg'); 
+    animation: scroll-vertical 18s linear infinite; 
+}
+
+section{
+    background-color: #226D68;
+ }
+
+ /*<-----ProjectsCS----->*/
+
+
+ .CStitle{
+    color: #D6955B; 
+    padding: 5% 5%;
+    font-size: 80px;
+ }
+
+
+.CSProjects li {
+    display: flex;
+    justify-content: center;
+}
+
+.CSProjects li a{
+    text-decoration: 0;
+    display: block; /* Permet au lien de se comporter comme un bloc */
+    width: 100vw; /* Prend toute la largeur de l'écran */
+    height: 60vh; /* Ajuste la hauteur selon tes besoins */
+    text-align: center; /* Centre le texte horizontalement */
+    font-size: 40px;
+    color: #18534F;
+
+    /* Pour centrer et faire couvrir l'image */
+    background-size: cover; /* L'image couvre tout le bloc */
+    background-position: center; /* Centre l'image */
+    margin: 5% 0;
+
+}
+
+.CSProjects a:hover{
+    color: #FEEAA1; 
+
+}
+
+.RythmGame{
+    background-image: url('RythmGame.png'); 
+    animation: scroll-vertical 25s linear infinite; 
+}
+
+.AirBnbPrediction {
+    background-image: url('AirBnb.png'); /* Lien vers ton image */
+    animation: scroll-vertical 15s linear infinite; /* Animation pour le défilement */
+
+}
+
+ /*<-----ProjectsElectronic----->*/
+
+
+ .Electronictitle{
+    color: #D6955B; 
+    padding: 5% 5%;
+    font-size: 80px;
+ }
+
+
+.ElectronicProjects li {
+    display: flex;
+    justify-content: center;
+}
+
+.ElectronicProjects li a{
+    text-decoration: 0;
+    display: block; /* Permet au lien de se comporter comme un bloc */
+    width: 100vw; /* Prend toute la largeur de l'écran */
+    height: 60vh; /* Ajuste la hauteur selon tes besoins */
+    text-align: center; /* Centre le texte horizontalement */
+    font-size: 40px;
+    color: #18534F;
+
+    /* Pour centrer et faire couvrir l'image */
+    background-size: cover; /* L'image couvre tout le bloc */
+    background-position: center; /* Centre l'image */
+    margin: 5% 0;
+}
+
+.ElectronicProjects a:hover{
+    color: #FEEAA1; 
+
+}
+
+
+.FightGame{
+    background-image: url('FightGame.png'); 
+    animation: scroll-vertical 15s linear infinite; 
+}
+
+
+
+.BioHybridSensors{
+    background-color: #ECF8F6;
+
+}
+
+.BioHybridSensors h1{
+    color: #18534F;
+    font-size: 50px;
+    padding: 0 8%;
+    padding-top: 5%;
+    padding-bottom: 0%;
+}
+
+.BioHybridSensors p{
+    font-size: 15px;
+    padding: 5% 5%;
+    
+
+}
+
+@keyframes scroll-vertical {
+    0% {
+        background-position: center top; /* Départ en haut */
+    }
+    100% {
+        background-position: center bottom; /* Descend vers le bas */
+    }
 }
