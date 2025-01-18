@@ -23,18 +23,164 @@
     </header>
 
     <section class="BioHybridSensors">
-        <h1>
-            Bio Sensors
-        </h1>
-        
-        <p>
-            Based on the work of Nicolae et al."Biohybrid Devices" I replicate the "grow arround method" and "layering" to embed sensing capabilities in bacterial cellullose. 
-            In the course of this project I built a total of 3 different sensors, two of which were resistive (temperature and stretch sensors) and one capacitive (mutual capacitance matrix). 
-            Using the Arduino and other modules, I was able to design functional bio-hybrid sensors.  
-        </p>
-        <h2>
-            Temperature Sensor 
-        </h2>
+        <div class="BioHybridSensorsAbstract">
+            <h1>
+                Bio Sensors
+            </h1>
+            
+            <p>
+                Based on the work of Nicolae et al."Biohybrid Devices" I replicate the "grow arround method" and "layering" to embed sensing capabilities in bacterial cellullose. 
+                In the course of this project I built a total of 3 different sensors, two of which were resistive (temperature and stretch sensors) and one capacitive (mutual capacitance matrix). 
+                Using the Arduino and other electronic components, I was able to design functional bio-hybrid sensors.  
+            </p>
+    
+            <img src="BioSensors.jpg">
+        </div>
+
+        <div class = "TemperatureSensor">
+            <h2>
+                Temperature Sensor  
+            </h2> 
+            <div class="TemperatureSensor1">
+
+            <P>
+                To make this sensor I used a layering technique as presented in the paper. A thin copper wire was inserted into a scoby cut in half to give the sensor its resistive properties.  
+                To dry the bacterial cellulose, the scoby/copper wire assembly was placed in the oven for a few hours.  
+            </P>
+            <div class="TemperatureSensor1Image">
+                <img src="CapteurTemperature.jpg">
+                <img src="CapteurTemperatureEpingle.jpg">
+            </div>
+            </div>
+
+            <div class="TemperatureSensor2">
+
+                <div class="TemperatureSensor2Image">
+                    <img src="CapteurTemperatureResistance.jpg">
+                    <img src="CapteurTemperatureSchemaTotal.jpg">
+                </div>
+                <p>
+                    To make the sensor functional I used the simple principle of TCR (temperature coefficient of resistance) applied to copper wire and measured its slight variations in resistance due to 
+                    a change in temperature. To do this I combined the temperature sensor with a Wheatstone bridge and an HX711, which I will calibrate to better display the temperature in the Arduino's serial monitor. 
+                    The HX711 is mainly used to amplify the voltage variation detected at the terminal of the Wheatstone bridge. The calibration of the HX711 was done through experimental measurements at controlled temperature. 
+                    To measure and display correct temperatures on the Arduino's serial port, I determined a temperature equation as a function of the voltage at the terminal of the Wheatstone bridge, which I then implemented in the Arduino code. 
+                </p>
+            </div>
+
+            <div class="TemperatureSensorDemonstration">
+                <p>
+                    Demonstrations of the use of this sensor on the human body and on a plate at 100°C :            
+                </p>
+                <div class="TemperatureSensorDemonstrationVideo">
+                    <video controls muted width="600" class="TemperatureSensorDemonstrations">
+                        <source src="BodyTemperature.mp4">
+                    </video>
+                    <video controls muted width="600" class="TemperatureSensorDemonstrations">
+                        <source src="Temperature100°C.mp4">
+                    </video>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class = "StretchSensor">
+            <h2>
+                Stretch Sensor  
+            </h2> 
+            <div class="StretchSensor1">
+
+            <P>
+                The stretch sensor was grown directly in the kombucha. Above the growth medium I placed a resistive paper. The bacterial cellulose then grew under the paper before enclosing it in the cellulose.  
+            </P>
+            <div class="StretchSensor1Image">
+                <img src="CapteurStretchScoby.jpg">
+                <img src="CapteurStretchPousse1.jpg">
+            </div>
+            </div>
+
+            <div class="StretchSensor2">
+
+                <div class="StretchSensor2Image">
+                    <img src="CapteurStretch.jpg">
+                    <img src="CapteurStretchCousu.jpg">
+                </div>
+                <p>
+                    After taking it out of its growth medium, the sensor was placed in the oven at 50°C for 6 hours, just like the temperature sensor. To maintain and take advantage of the flexibility of this sensor, 
+                    the wires had to be as thin and flexible as possible, as well as being insulated against magnetic fields. To integrate them into the sensor, I made a seam with a conductive wire. 
+                </p>
+            </div>
+
+            <div class="StretchSensor3">
+
+                <p>
+                    Calibration is carried out in the same way as for the temperature sensor, the only difference being that in our case we will use a Wheatstone bridge adapted to the scale of the resistance measured when 
+                    the sensor is folded and unfolded. In addition, we will only be measuring the raw resistance values, with no unit output to the amplifier.                 
+                </p>
+                <div class="StretchSensor3Image">
+                    <img src="CapteurStretchPlie.jpg">
+                    <img src="CapteurStretchDeplie.jpg">
+                    <img src="SchemaCapteurStretch.jpg">
+                </div>
+            </div>
+
+            <div class="StretchSensorDemonstration">
+                <p>
+                    Demonstrations of the use of the stretch sensor :            
+                </p>
+                <div class="TemperatureSensorDemonstrationVideo">
+                    <video controls muted width="600" class="TemperatureSensorDemonstrations">
+                        <source src="StretchSensorDemonstration.mp4">
+                    </video>
+                </div>
+            </div>
+        </div>
+
+        <div class = "Matrix">
+            <h2>
+                Mutual Capacitive Sensor  
+            </h2> 
+            <div class="Matrix1">
+
+            <P>
+                For this sensor I used an Arduino, a <a href="https://github.com/muca-board/Muca?tab=readme-ov-file">Muca</a> sensor and the mutual capacitance matrix. To make it, I've used conductive yarn, a layering support 
+                and a scoby. The layering technique was used to make this sensor.  
+            </P>
+            <div class="Matrix1Image">
+                <img src="PreparationMatrice1.jpg">
+                <img src="PreparationMatrice2.jpg">
+            </div>
+            </div>
+
+            <div class="Matrix2">
+
+                <div class="Matrix2Image">
+                    <img src="CapteurMutualCapacitanceSens.jpg">
+                    <img src="SchemaElectroniqueMatrice.jpg">
+                </div>
+                <p>
+                    The drying process is the same as for the other sensors. The soldering part is a bit tricky and we first had to remove some of the wire's protective insulation at the end with a soldering iron, put some 
+                    extinguishant on it and solder it with a bad pin before reinforcing the whole thing with a sheath. As far as the Muca board is concerned, I downloaded the Muca library from 
+                    <a href="https://github.com/muca-board/Muca?tab=readme-ov-file">GitHub</a> and used the relevant functions to retrieve the useful data (getTouch() in particular, which provides the touch coordinates and weight). 
+                    To make the visualisation of the touch more intuitive and visible, I created a display in Processing by treating the data returned on the Arduino's serial port. Unfortunately, the sensor contains a faulty row 
+                    and column that distort the display on these axes (axes in red).
+                </p>
+            </div>
+
+            <div class="MatrixDemonstration">
+                <p>
+                    Demonstrations of the use of this sensor on Processing :            
+                </p>
+                <div class="TemperatureSensorDemonstrationVideo">
+                    <video controls muted width="600" class="TemperatureSensorDemonstrations">
+                        <source src="MatrixDemonstration.mp4">
+                    </video>
+                </div>
+
+            </div>
+
+        </div>
+
     </section>
 
 </body>

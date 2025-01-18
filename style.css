@@ -282,8 +282,12 @@ section.Projects h2:hover{
 
  .DBLTtitle{
     color: #D6955B; 
-    padding: 5% 5%;
-    font-size: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10%;
+    padding-bottom: 9%;
+    font-size: 8vw;
  }
 
 .DBLTProjects li {
@@ -296,12 +300,13 @@ section.Projects h2:hover{
     display: block; /* Permet au lien de se comporter comme un bloc */
     width: 100vw; /* Prend toute la largeur de l'écran */
     height: 60vh; /* Ajuste la hauteur selon tes besoins */
-    text-align: center; /* Centre le texte horizontalement */    font-size: 40px;
+    text-align: center; /* Centre le texte horizontalement */    
+    font-size: 40px;
     color: #18534F;
     /* Pour centrer et faire couvrir l'image */
     background-size: cover; /* L'image couvre tout le bloc */
     background-position: center; /* Centre l'image */
-    margin: 5% 0;
+    margin: 1% 0;
 
 }
 
@@ -329,10 +334,16 @@ section{
  /*<-----ProjectsCS----->*/
 
 
- .CStitle{
+ .CStitle h1{
     color: #D6955B; 
-    padding: 5% 5%;
-    font-size: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 13%;
+    padding-bottom: 12%;
+    font-size: 8vw;
+
+
  }
 
 
@@ -353,7 +364,7 @@ section{
     /* Pour centrer et faire couvrir l'image */
     background-size: cover; /* L'image couvre tout le bloc */
     background-position: center; /* Centre l'image */
-    margin: 5% 0;
+    margin: 1% 0;
 
 }
 
@@ -377,9 +388,13 @@ section{
 
 
  .Electronictitle{
-    color: #D6955B; 
-    padding: 5% 5%;
-    font-size: 80px;
+    color: #D6955B;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10%;
+    padding-bottom: 9%;
+    font-size: 8vw;
  }
 
 
@@ -400,7 +415,7 @@ section{
     /* Pour centrer et faire couvrir l'image */
     background-size: cover; /* L'image couvre tout le bloc */
     background-position: center; /* Centre l'image */
-    margin: 5% 0;
+    margin: 1% 0;
 }
 
 .ElectronicProjects a:hover{
@@ -432,8 +447,247 @@ section{
 .BioHybridSensors p{
     font-size: 15px;
     padding: 5% 5%;
-    
 
+}
+
+.BioHybridSensorsAbstract img{
+    width: 50vh;
+    display: block;
+    margin: 0 auto; /* Centre horizontalement */
+    padding-bottom: 5%;
+}
+
+.BioHybridSensors h2{
+    padding: 0 5%;
+    padding-top: 5%;
+    padding-bottom: 0%;    
+    color: #226D68;
+    font-size: 25px;
+}
+
+.TemperatureSensor1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5% 0;
+    margin-right: 10%;
+}
+
+.TemperatureSensor1 p{
+    margin: 0 10%;
+}
+
+.TemperatureSensor1Image {
+    padding: 0 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.TemperatureSensor1Image img{
+    width: 40vh;
+    margin: 10%;
+}
+
+.TemperatureSensor2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5% 0;
+    margin-left: 10%;
+}
+
+.TemperatureSensor2 p{
+    margin: 0 10%;
+}
+
+.TemperatureSensor2Image {
+    padding: 0 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.TemperatureSensor2Image img{
+    width: 40vh;
+    margin: 10%;
+}
+
+
+.TemperatureSensorDemonstration{
+padding: 0 5%;
+}
+
+.TemperatureSensorDemonstrationVideo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 0 5%;
+}
+
+.TemperatureSensorDemonstrationVideo video{
+    padding: 5% 0;
+    margin: 0 5%; 
+    width: 60vh;
+    max-width: 100%;
+}
+
+
+
+.StretchSensor1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5% 0;
+    margin-right: 10%;
+}
+
+.StretchSensor1 p{
+    margin: 0 10%;
+}
+
+.StretchSensor1Image {
+    padding: 0 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.StretchSensor1Image img{
+    width: 40vh;
+    margin: 10%;
+}
+
+.StretchSensor2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5% 0;
+    margin-left: 10%;
+}
+
+.StretchSensor2 p{
+    margin: 0 10%;
+}
+
+.StretchSensor2Image {
+    padding: 0 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.StretchSensor2Image img{
+    width: 40vh;
+    margin: 10%;
+}
+
+.StretchSensor3{
+    padding: 0 5%;
+}
+
+.StretchSensor3 p{
+    margin: 0 6%;
+}
+
+.StretchSensor3Image {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 0 5%;
+    
+}
+
+.StretchSensor3Image img{
+    width: 40vh;
+    padding: 5% 0;
+    margin: 0 3%; 
+    max-width: 100%;
+}
+
+.StretchSensorDemonstration{
+    padding: 0 5%;
+    }
+
+
+
+.Matrix1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5% 0;
+    margin-right: 10%;
+}
+
+.Matrix1 p{
+    margin: 0 10%;
+}
+
+.Matrix a{
+    text-decoration: 0;
+    color: #226D68;
+}
+
+.Matrix a:hover{
+    color: #D6955B;
+    border: 2px solid #ECF8F6; 
+    padding: 3px 16px;
+    transition: 0.5s;}
+
+.Matrix1Image {
+    padding: 0 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.Matrix1Image img{
+    width: 40vh;
+    margin: 10%;
+}
+
+.Matrix2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5% 0;
+    margin-left: 10%;
+}
+
+.Matrix2 p{
+    margin: 0 10%;
+}
+
+
+.Matrix2Image {
+    padding: 0 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.Matrix2Image img{
+    width: 40vh;
+    margin: 10%;
+}
+
+.MatrixDemonstration{
+    padding: 0 5%;
+    padding-bottom: 5%;
 }
 
 @keyframes scroll-vertical {
@@ -442,5 +696,83 @@ section{
     }
     100% {
         background-position: center bottom; /* Descend vers le bas */
+    }
+}
+
+@media (max-width: 985px) {
+    .TemperatureSensorDemonstrationVideo {
+        flex-direction: column; /* Passe les vidéos en colonne */
+    }
+
+    .TemperatureSensorDemonstrationVideo video{
+        max-width: 90%;
+    }
+
+    .TemperatureSensor1 {
+        flex-direction: column; 
+        margin-right: 0;
+    }
+
+    .TemperatureSensor1Image img{
+        margin: 10% auto;
+
+    }
+
+    .TemperatureSensor2 {
+        flex-direction: column; 
+        margin-left: 0;
+    }
+
+
+    .TemperatureSensor2Image img{
+        margin: 10% auto;
+    }
+
+    .StretchSensor1 {
+        flex-direction: column;
+        margin-right: 0;
+    }
+
+    .StretchSensor1Image img{
+        margin: 10% auto;
+
+    }
+
+    .StretchSensor2 {
+        flex-direction: column; 
+        margin-left: 0;
+
+    }
+
+    .StretchSensor2Image img{
+        margin: 10% auto;
+    }
+
+    .StretchSensor3Image{
+        flex-direction: column;
+    }
+
+    .StretchSensor3Image img{
+        margin: 0 auto;
+    }
+
+    .Matrix1 {
+        flex-direction: column;
+        margin-right: 0;
+    }
+
+    .Matrix1Image img{
+        margin: 10% auto;
+
+    }
+
+    .Matrix2 {
+        flex-direction: column; 
+        margin-left: 0;
+
+    }
+
+    .Matrix2Image img{
+        margin: 10% auto;
     }
 }
