@@ -16,10 +16,6 @@ body {
     /* pour masquer le contenu qui dépasse de la boîte de l'élément */
 }
 
-.introduction{
-    background-color: #18534F;
-}
-
 /* MENU : HEADER */
 
 .logo{
@@ -99,7 +95,9 @@ header{
     padding: 0 8%;
     display: flex;
     align-items: center;
+    flex-direction: row;
     justify-content: space-between;
+    background-color: #18534F;
 }
 
 .left{
@@ -133,6 +131,7 @@ header{
 .right{
     width: 40%;
     display: flex;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
     height: 100%;
@@ -1188,6 +1187,19 @@ padding: 0 5%;
     width: 80%;
 }
 @media (max-width: 1000px) {
+
+    .introduction{
+        flex-direction: column;
+    }
+
+    .right{
+        flex-direction: column;
+    }
+
+    .right img{
+        margin: 10% 0;
+    }
+
     .TemperatureSensorDemonstrationVideo {
         flex-direction: column; /* Passe les vidéos en colonne */
     }
