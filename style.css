@@ -16,6 +16,9 @@ body {
     /* pour masquer le contenu qui dépasse de la boîte de l'élément */
 }
 
+.introduction{
+    background-color: #18534F;
+}
 
 /* MENU : HEADER */
 
@@ -298,33 +301,32 @@ section.Projects h2:hover{
 .DBLTProjects li a{
     text-decoration: 0;
     display: block; /* Permet au lien de se comporter comme un bloc */
-    width: 100vw; /* Prend toute la largeur de l'écran */
-    height: 60vh; /* Ajuste la hauteur selon tes besoins */
+    width: 70vw; /* Prend toute la largeur de l'écran */
+    height: 70vh; /* Ajuste la hauteur selon tes besoins */
     text-align: center; /* Centre le texte horizontalement */    
     font-size: 40px;
-    color: #18534F;
+    color: #FEEAA1;
     /* Pour centrer et faire couvrir l'image */
     background-size: cover; /* L'image couvre tout le bloc */
     background-position: center; /* Centre l'image */
-    margin: 1% 0;
+    margin: 5% 0;
 
 }
 
 .DBLTProjects a:hover{
-    color: #FEEAA1; 
-
+    opacity: 0.5;
 }
 
 .BioSensors {
     background-image: url('BioSensors.jpg'); /* Lien vers ton image */
-    animation: scroll-vertical 18s linear infinite; /* Animation pour le défilement */
+    /* animation: scroll-vertical 18s linear infinite; Animation pour le défilement */
 
 }
 
 
 .MyceliumPizzaOven{
     background-image: url('MyceliumPizzaOven.jpg'); 
-    animation: scroll-vertical 18s linear infinite; 
+    /* animation: scroll-vertical 9s linear infinite;  */
 }
 
 section{
@@ -355,32 +357,30 @@ section{
 .CSProjects li a{
     text-decoration: 0;
     display: block; /* Permet au lien de se comporter comme un bloc */
-    width: 100vw; /* Prend toute la largeur de l'écran */
-    height: 60vh; /* Ajuste la hauteur selon tes besoins */
+    width: 70vw; /* Prend toute la largeur de l'écran */
+    height: 70vh; /* Ajuste la hauteur selon tes besoins */
     text-align: center; /* Centre le texte horizontalement */
     font-size: 40px;
-    color: #18534F;
+    color: #FEEAA1;
 
     /* Pour centrer et faire couvrir l'image */
     background-size: cover; /* L'image couvre tout le bloc */
     background-position: center; /* Centre l'image */
-    margin: 1% 0;
+    margin: 5% 0;
 
 }
 
 .CSProjects a:hover{
-    color: #FEEAA1; 
+    opacity: 0.5;
 
 }
 
 .RythmGame{
     background-image: url('RythmGame.png'); 
-    animation: scroll-vertical 25s linear infinite; 
 }
 
 .AirBnbPrediction {
     background-image: url('AirBnb.png'); /* Lien vers ton image */
-    animation: scroll-vertical 15s linear infinite; /* Animation pour le défilement */
 
 }
 
@@ -406,20 +406,20 @@ section{
 .ElectronicProjects li a{
     text-decoration: 0;
     display: block; /* Permet au lien de se comporter comme un bloc */
-    width: 100vw; /* Prend toute la largeur de l'écran */
-    height: 60vh; /* Ajuste la hauteur selon tes besoins */
+    width: 70vw; /* Prend toute la largeur de l'écran */
+    height: 70vh; /* Ajuste la hauteur selon tes besoins */
     text-align: center; /* Centre le texte horizontalement */
     font-size: 40px;
-    color: #18534F;
+    color: #FEEAA1;
 
     /* Pour centrer et faire couvrir l'image */
     background-size: cover; /* L'image couvre tout le bloc */
     background-position: center; /* Centre l'image */
-    margin: 1% 0;
+    margin: 5% 0;
 }
 
 .ElectronicProjects a:hover{
-    color: #FEEAA1; 
+    opacity: 0.5;
 
 }
 
@@ -428,6 +428,61 @@ section{
     background-image: url('FightGame.png'); 
     animation: scroll-vertical 15s linear infinite; 
 }
+
+
+/*<-----ProjectsModelisation----->*/
+
+
+.Modelisationtitle h1{
+    color: #D6955B; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 13%;
+    padding-bottom: 12%;
+    font-size: 8vw;
+
+
+ }
+
+
+.ModelisationProjects li {
+    display: flex;
+    justify-content: center;
+}
+
+.ModelisationProjects li a{
+    text-decoration: 0;
+    display: block; /* Permet au lien de se comporter comme un bloc */
+    width: 70vw; /* Prend toute la largeur de l'écran */
+    height: 70vh; /* Ajuste la hauteur selon tes besoins */
+    text-align: center; /* Centre le texte horizontalement */
+    font-size: 40px;
+    color: #FEEAA1;
+
+    /* Pour centrer et faire couvrir l'image */
+    background-size: cover; /* L'image couvre tout le bloc */
+    background-position: center; /* Centre l'image */
+    margin: 5% 0;
+
+}
+
+.ModelisationProjects a:hover{
+    opacity: 0.5;
+
+}
+
+.MedailleDEVINCIRun{
+    background-image: url('DevinciRunMedal1.png'); 
+}
+
+.ModelisationConcorde {
+    background-image: url('ConcordeModeling.png'); /* Lien vers ton image */
+
+}
+
+
+/*<-----ProjectsBioSensors----->*/
 
 
 
@@ -642,7 +697,8 @@ padding: 0 5%;
     color: #D6955B;
     border: 2px solid #ECF8F6; 
     padding: 3px 16px;
-    transition: 0.5s;}
+    transition: 0.5s;
+}
 
 .Matrix1Image {
     padding: 0 5%;
@@ -699,7 +755,439 @@ padding: 0 5%;
     }
 }
 
-@media (max-width: 985px) {
+
+.MyceliumPizzaOvenProject{
+    background-color: #ECF8F6;
+
+}
+
+.MyceliumPizzaOvenAbstract{
+    padding: 0 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.MyceliumPizzaOvenAbstract h1{
+    color: #18534F;
+    font-size: 50px;
+    padding: 0 8%;
+    padding-top: 5%;
+    padding-bottom: 0%;
+}
+
+.MyceliumPizzaOvenAbstract p{
+    font-size: 15px;
+    padding: 5% 5%;
+    margin-bottom: 3%;
+}
+
+.MyceliumPizzaOvenAbstract a{
+    text-decoration: 0;
+    color: #226D68;
+
+}
+
+.MyceliumPizzaOvenAbstract a:hover{
+    color: #D6955B;
+    border: 2px solid #ECF8F6; 
+    padding: 3px 16px;
+    transition: 0.5s;
+}
+
+.MyceliumPizzaOvenAbstract img{
+    width: 80vh;
+    margin: 0 10%;
+}
+
+
+.MyceliumPizzaOvenProjectFabrication h2{
+    padding: 10% 5%;  
+    color: #226D68;
+    font-size: 25px;
+}
+
+.MyceliumPizzaOvenProjectFabricationPrototype p{
+    padding: 0 5%;
+    margin: 0 10%;
+    margin-bottom: 5%;
+    font-size: 15px;
+}
+
+
+.MyceliumPizzaOvenProjectFabricationPrototypeImages {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 0 5%;
+}
+
+.MyceliumPizzaOvenProjectFabricationPrototypeImages img{
+    width: 40vh;
+    padding: 5% 0;
+    margin: 0 3%; 
+    max-width: 100%;
+}
+
+
+/* <-------ProjetAirBnb-------> */
+
+.AirbnbProject{
+    background-color: #ECF8F6;
+
+}
+
+.AirbnbProject h1{
+    color: #18534F;
+    font-size: 50px;
+    padding: 0 8%;
+    padding-top: 5%;
+    padding-bottom: 10%;
+}
+
+.AirbnbProjectAbstract{
+    padding: 5% 5%;
+}
+
+.AirbnbProjectAbstract p{
+    font-size: 15px;
+
+}
+
+
+.TextualCharacteristics h2{
+    padding: 0 5%;
+    padding-top: 5%;
+    padding-bottom: 0%;    
+    color: #226D68;
+    font-size: 25px;
+}
+
+.ConvertingTextualCharacteristics{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.ConvertingTextualCharacteristics p{
+    margin: 10% 10%;
+    font-size: 15px;
+}
+
+.ConvertingTextualCharacteristics img{
+    width: 60vh;
+    padding: 10% 0;
+    margin: 0 10%;
+}
+
+.PCAAndCMAnalysis {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.PCAAndCMAnalysis p{
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 10%;
+    font-size: 15px;
+}
+
+.PCAAndCMAnalysisImages {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 10%;
+    margin-bottom: 0;
+}
+
+.PCAAndCMAnalysis img{
+    width: 60vh;
+    padding: 10% 0;
+    margin: 0 5%;
+}
+
+
+.MLAlgorithm{
+    padding: 10% 10%;
+}
+
+.MLAlgorithm p{
+    font-size: 15px;
+}
+
+.MLAlgorithmImages{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.MLAlgorithm img{
+    width: 60vh;
+    padding: 10% 0;
+    margin: 0 5%;
+}
+
+
+/* <-------ProjetRythmGame-------> */
+
+.RythMGameProject{
+    background-color: #ECF8F6;
+}
+
+.RythmGameAbstract h1{
+    color: #18534F;
+    font-size: 50px;
+    padding: 0 8%;
+    padding-top: 5%;
+    padding-bottom: 10%;
+}
+
+.RythmGameAbstract{
+    padding: 5% 5%;
+}
+
+.RythmGameAbstract p{
+    font-size: 15px;
+
+}
+
+.RythmGameAbstract a{
+    text-decoration: 0;
+    color: #226D68;
+
+}
+
+.RythmGameAbstract a:hover{
+    color: #D6955B;
+    border: 2px solid #ECF8F6; 
+    padding: 3px 16px;
+    transition: 0.5s;
+}
+
+.TextDemoRythmGame{
+    margin: 10% 0;
+}
+
+.RythmGameDemonstration{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 0 5%;
+}
+    
+.RythmGameDemonstration video{
+    padding: 5% 0;
+    margin: 0 5%; 
+    width: 60vh;
+    max-width: 100%;
+}
+
+/* <-------FightGameProject-------> */
+
+.FightGameProject{
+    background-color: #ECF8F6;
+}
+
+.FightGameAbstract h1{
+    color: #18534F;
+    font-size: 50px;
+    padding: 0 8%;
+    padding-top: 5%;
+    padding-bottom: 10%;
+}
+
+.FightGameAbstract{
+    padding: 5% 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.FightGameAbstract p{
+    font-size: 15px;
+
+}
+
+.FightGameAbstract img{
+    margin: 10% 0;
+    width: 90%;
+}
+
+.FightGameDemonstration1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.FightGameDemon1{
+    margin: 5% 0;
+    width: 80%;
+}
+
+.FightGameDemonstration2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.FightGameDemo2{
+    margin: 5% 0;
+    width: 80%;
+}
+
+/* <-------ProjetMedailleDEVINCIRun-------> */
+
+.MedailleDEVINCIRunProject{
+    background-color: #ECF8F6;
+}
+
+.MedailleDEVINCIRunAbstract h1{
+    color: #18534F;
+    font-size: 50px;
+    padding: 0 8%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+.MedailleDEVINCIRunAbstract{
+    padding: 5% 5%;
+}
+
+.MedailleDEVINCIRunAbstract p{
+    font-size: 15px;
+    margin-top: 5%;
+}
+
+.DevinciRunMedalImage{
+    display: flex;
+    flex-direction: row;
+    align-items: center;    
+    justify-content: center;
+}
+
+.DevinciRunMedalImage img{
+    width: 60%;
+    margin: 5% 10%;
+}
+
+.DevinciRunMedalDemonstration{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10% 0;
+}
+
+.DevinciRunMedalDemonstration video{
+    width: 80%;
+}
+
+.ModelisationConcordeProject{
+    background-color: #ECF8F6;
+}
+
+.ModelisationConcordeAbstract h1{
+    color: #18534F;
+    font-size: 50px;
+    padding: 0 8%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+
+.ModelisationConcordeAbstract{
+    padding: 5% 5%;
+}
+
+.ModelisationConcordeAbstract p{
+    font-size: 15px;
+    margin-top: 5%;
+}
+
+.ModelisationConcordeAbstract h2{
+    padding: 0 5%;
+    padding-top: 10%;
+    padding-bottom: 0%;    
+    color: #226D68;
+    font-size: 25px;
+}
+
+.ModelisationConcordeFuselage{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 10% 10%;
+
+}
+
+.ModelisationConcordeFuselage p{
+    font-size: 15px;
+    margin-right: 10%;
+}
+
+.ModelisationConcordeFuselageImage{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.ModelisationConcordeFuselageImage img{
+    width: 50vh;
+    margin: 10% 0;
+}
+
+.ModelisationConcordeFuselageDemonstration p{
+    margin-bottom: 10%;
+}
+
+.ModelisationConcordeFuselagelVideo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+}
+
+.ModelisationConcordeFuselagelVideo video{
+    width: 80%;
+}
+
+.ModelisationConcordelVideo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+}
+
+.ModelisationConcordelVideo video{
+    width: 80%;
+}
+
+
+.ModelisationConcordeDemonstration p{
+    margin-bottom: 10%;
+    margin-top: 8%;
+}
+
+.ModelisationConcordeDemonstrationVideo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.ModelisationConcordeDemonstrationVideo video{
+    width: 80%;
+}
+@media (max-width: 1000px) {
     .TemperatureSensorDemonstrationVideo {
         flex-direction: column; /* Passe les vidéos en colonne */
     }
@@ -775,4 +1263,71 @@ padding: 0 5%;
     .Matrix2Image img{
         margin: 10% auto;
     }
+
+    .MyceliumPizzaOvenProjectFabricationPrototypeImages{
+        flex-direction: column;
+    }
+
+    .MyceliumPizzaOvenProjectFabricationPrototypeImages img{
+        margin: 0 auto;
+    }
+
+    .PCAAndCMAnalysis{
+        flex-direction: column;
+    }
+
+    .PCAAndCMAnalysisImages {
+        flex-direction: column;
+    }
+
+    .PCAAndCMAnalysisImages img{
+        margin: 0 auto;
+    }
+
+    .ConvertingTextualCharacteristics{
+        flex-direction: column;
+    }
+
+    .ConvertingTextualCharacteristics img{
+        margin: 0 auto;
+    }
+
+    .RythmGameDemonstration{
+        flex-direction: column;
+    }
+    .DevinciRunMedalImage{
+        flex-direction: column;
+    }
+
+    .ModelisationConcordeFuselage{
+        flex-direction: column;
+    }
+
+    .ModelisationConcordeFuselage p{
+        margin-right: 0%;
+    }
+
+    .ModelisationConcordeFuselage img{
+        width: 80%;
+    }
+
+}
+
+
+/* <----------ContactMe----------> */
+
+.Contacttitle h1{
+    color: #D6955B; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10%;
+    padding-bottom: 9%;
+    font-size: 5vw;
+}
+
+.Contacttitle p{
+    color: #FEEAA1;
+    margin: 0 5%;
+    padding: 5% 0;
 }

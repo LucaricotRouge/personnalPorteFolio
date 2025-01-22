@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+
+        <div class="logo">
+            <span style ="color : #C9E3CC">!</span>L
+        </div>
+        <nav> 
+            <ul class="menu"> 
+                   <li><a href="index.html">About me</a></li> 
+                   <li><a href="Projects.html">Projects</a></li>
+                   <li class="contact"><a href="Contact.html">Contact Me</a></li>
+                </ul>
+        </nav>
+    </header>
+    <section class="FightGameProject">
+        <div class="FightGameAbstract">
+            <h1>
+                Fight Game
+            </h1>
+            <p>
+                For this project at school, I had 3 days to learn how to connect and make synchronized communication between two ESP32s to play a 
+                1v1 fighting game with another local player.  With one of my classmates, we decided to make a game inspired by Street Fighter. We 
+                first designed two pixel art characters, each with four different frames of moves.
+            </p>
+            <img src="CaractersRyuVSLucas.png">
+            <p class="FightGameExplanation">
+                We first tried to display the characters on the 128x64 screen and make them move when pressing a button. Initially, we wanted to 
+                control the characters' movements with a joystick, but we couldn't display it correctly. So, we decided to focus solely on the 
+                attacking mechanics.            
+            </p>
+            <div class="FightGameDemonstration1">
+                <video class="FightGameDemon1" controls muted width="600">
+                    <source src="RyuVsLucasTest.mp4" type="video/mp4">
+                </video>
+            </div>
+            <p class="FightGameExplication2">
+                Then, we used WebSocket to connect both boards by creating a server on my classmate's board and connecting my board to it.
+                We successfully created a mini-game with the two boards, where the objective was to press the button as fast as possible until 
+                the opponent lost all their life points to win. However, we couldn't implement the character animations in the game, which was 
+                a bit disappointing.
+            </p>
+            <div class="FightGameDemonstration2">
+                <video class="FightGameDemo2" controls muted width="600">
+                    <source src="RyuVsLucasFight.mp4" type="video/mp4">
+                </video>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
